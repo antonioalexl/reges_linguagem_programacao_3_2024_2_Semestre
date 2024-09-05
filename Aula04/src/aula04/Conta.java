@@ -17,14 +17,14 @@ public class Conta {
     }
 
     public void sacar(double valor) {
-        if (this.saldo >= valor) {
-            this.saldo = this.saldo - valor;
-            System.out.println("Saque concluido: Novo valor" + this.saldo);
+    if (this.saldo >= valor) {
+        this.saldo = this.saldo - valor;
+        System.out.println("Saque concluido: Novo valor" + this.saldo);
 
-        } else {
-            System.out.println("Saque nao concluido: Saldo insuficiente" + this.saldo);
+    } else {
+        System.out.println("Saque nao concluido: Saldo insuficiente" + this.saldo);
 
-        }
+    }
 
     }
 
