@@ -22,7 +22,7 @@ a) Crie uma classe chamada Principal e dentro dela faça o método main para usa
 b) No método main, crie 4 objetos do tipo Contato, onde cada objeto deve guardar os dados de 4 contatos seu.
 
 c)Também no método main, exiba todos os dados de todos os 4 contatos criados no console.*/
-       /* Contato c1 = new Contato();
+ /* Contato c1 = new Contato();
         c1.Nome = "João";
         c1.Email = "joao@reges.edu.br";
         c1.Endereco = "Rua da Reges";
@@ -71,9 +71,7 @@ c)Também no método main, exiba todos os dados de todos os 4 contatos criados n
         System.out.println("Email: " + c4.Email);
         System.out.println("Endereco: " + c4.Endereco);
         System.out.println("Telefone: " + c4.Telefone);*/
-
-
-        /*2)No mesmo projeto Aula03 crie uma nova classe chamada Corretora e faça as seguinte operações. Crie os atributos: número(int), agencia (string), titular (string) e agencia (string) e saldo (double). Implemente os métodos:
+ /*2)No mesmo projeto Aula03 crie uma nova classe chamada Corretora e faça as seguinte operações. Crie os atributos: número(int), agencia (string), titular (string) e agencia (string) e saldo (double). Implemente os métodos:
 
 a) depositar: recebe o parâmetro valor e incrementa o valor do atributo saldo. 
 
@@ -84,21 +82,26 @@ c)investir: não recebe argumento e altera o valor do atributo saldo, multiplica
 d)imprimir: o método deve imprimir o valor de todos atributos depois de cada operação de depósito, saque e investimento.
 
 Faça testes no método main da classe principal, criando vários objetos e realizando operações de saque, depósito e impressão.*/
-   
-    Corretora cor1 = new Corretora();
-    cor1.Titular = "Peter Parker";
-    cor1.Agencia = "001";
-    cor1.Saldo = 100;
-    
-    cor1.imprimir();
-    cor1.depositar(10);
-    cor1.imprimir();
-    
-    
-    cor1.sacar(25);
-    cor1.imprimir();
-    
-    
+        Corretora cor1 = new Corretora();
+        cor1.setTitular ("Peter Parker");
+        cor1.setAgencia("001");
+        cor1.setSaldo(100);
+
+        cor1.imprimir();
+        cor1.depositar(10);
+        
+        cor1.sacar(125);
+        
+        cor1.imprimir();
+        cor1.sacar(25);
+
+       /* Pessoa p1 = new Pessoa();
+        p1.Nome = "Tony Stark";
+        Pessoa p2 = p1;
+        p2.Nome = "Steve Roger";
+        System.out.println("p1 " + p1.Nome);
+        System.out.println("p2 " + p2.Nome);*/
+
     }
 
 }

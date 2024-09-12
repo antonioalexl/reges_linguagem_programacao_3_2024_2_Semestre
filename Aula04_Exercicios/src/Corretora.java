@@ -11,11 +11,26 @@ public class Corretora {
     //No mesmo projeto Aula03 crie uma nova classe chamada Corretora e
     //faça as seguinte operações. Crie os atributos: número(int), agencia (string), titular (string) e agencia (string) e saldo (double)
 
-    public int Numero;
-    public String Agencia;
-    public String Titular;
-    public double Saldo;
+    private int Numero;
+    private String Agencia;
+    private String Titular;
+    private double Saldo;
 
+    public void setNumero(int value) {
+        this.Numero = value;
+    }
+
+    public void setTitular(String value) {
+        this.Titular = value;
+    }
+
+    public void setAgencia(String value) {
+        this.Agencia = value;
+    }
+
+      public void setSaldo(double value) {
+        this.Saldo = value;
+    }
     public void depositar(double valor) {
         this.Saldo = this.Saldo + valor;
         this.imprimir();
@@ -33,7 +48,7 @@ public class Corretora {
 
     public void investir() {
         this.Saldo = (this.Saldo * 1.05);
-       this.imprimir();
+        this.imprimir();
     }
 
     public void imprimir() {
