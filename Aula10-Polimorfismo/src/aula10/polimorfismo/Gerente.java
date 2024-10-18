@@ -9,10 +9,9 @@ package aula10.polimorfismo;
  * @author anton
  */
 public class Gerente extends Funcionario {
-    
-    
-  @Override
-  public void aumentarSalario(double pValor){
+
+    @Override
+    public void aumentarSalario(double pValor) {
         this.Salario = (this.Salario + pValor) * 1.20;
         System.out.println("O novo salário do gerente  é: " + this.Salario);
     }
