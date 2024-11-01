@@ -12,9 +12,8 @@ import java.util.Calendar;
 public class Fornecedor extends Pessoa {
 
     private String NichoMercado;
-    
-    
-    public Fornecedor(String nomeCompleto, String nichoMercado){
+
+    public Fornecedor(String nomeCompleto, String nichoMercado) {
         super(nomeCompleto);
         this.NichoMercado = nichoMercado;
     }

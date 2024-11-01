@@ -20,7 +20,6 @@ public class Funcionario extends Pessoa {
 
     public Funcionario(String nomeCompleto, String nichoMercado) {
         super(nomeCompleto);
-
     }
 
     public Funcionario(String nomeCompleto, String nomeTratamento, String documento) {
